@@ -16,4 +16,6 @@ interface TagRepositoryInterface
     public function index(): array;
 
     public function top(): array;
+
+    public function clear(): void;
 }

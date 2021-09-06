@@ -65,4 +65,12 @@ class TagRepository extends BaseRepository implements TagRepositoryInterface
             ->take(3)
             ->get()->toArray();
     }
+
+    /**
+     * @return void
+     */
+    public function clear(): void
+    {
+        Tag::query()->where('user_id', auth()->id())->delete();
+    }
 }

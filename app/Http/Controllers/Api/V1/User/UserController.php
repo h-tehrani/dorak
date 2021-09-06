@@ -15,7 +15,7 @@ class UserController extends Controller
 {
     use ApiResponse;
 
-    private $userRepository;
+    private UserRepositoryInterface $userRepository;
 
     public function __construct(UserRepositoryInterface $userRepository)
     {

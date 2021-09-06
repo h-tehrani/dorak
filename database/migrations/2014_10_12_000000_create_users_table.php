@@ -17,6 +17,7 @@ class CreateUsersTable extends Migration
             $table->id();
             $table->string('nickname')->unique();
             $table->string('password');
+            $table->dateTime('last_online_time')->nullable();
             $table->rememberToken();
             $table->timestamps();
         });

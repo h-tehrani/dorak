@@ -25,6 +25,7 @@ class UserFactory extends Factory
         return [
             'nickname' => $this->faker->name(),
             'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', // password
+            'last_online_time' => '2021-09-06 7:41:46',
         ];
     }
 

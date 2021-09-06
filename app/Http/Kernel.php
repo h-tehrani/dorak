@@ -66,5 +66,8 @@ class Kernel extends HttpKernel
 
         #limit users for usage tags
         'limit' => \App\Http\Middleware\TagUsageLimit::class,
+
+        #handle last online time for users
+        'lastOnlineTime' => \App\Http\Middleware\LastOnlineTime::class,
     ];
 }

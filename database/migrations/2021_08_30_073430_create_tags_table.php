@@ -17,6 +17,7 @@ class CreateTagsTable extends Migration
             $table->id();
             $table->string('name');
             $table->string('path');
+            $table->string('hash')->nullable();
             $table->integer('confidence');
             $table->foreignId('user_id')->constrained()->cascadeOnDelete();
             $table->timestamps();
